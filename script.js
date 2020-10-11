@@ -42,7 +42,7 @@ window.addEventListener('load', ()=>{
             
         });
 } else{
-    
+    locationApi.innerText = 'Enter Location';
 }
 });
 
