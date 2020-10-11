@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    margin: 0px;
+}
+body{
+    /* font-family: 'Josefin Sans'; */
+    background: #6441A5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 400px;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+.location, .temperature{
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.location-timezone{
+    text-align: center;
+}
+.temperature{
+    /* display: flex;
+    flex-direction: column; */
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.searchInput{
+    /* font-family: 'Josefin Sans'; */
+    height: 40px;
+    width: 250px;
+    border: none;
+    border-radius: 6px;
+    margin: 20px;
+    background-color: white;
+    outline: none;
+    padding-left: 20px;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+::placeholder{
+    font-family: 'Josefin Sans';
+    color:#adadad;
+    font-family: poppins;
+    /* padding-left: 10px; */
+    font-size: 18px;
+}
+
+.title{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 60px;
+}
+
+.degree{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.fahrenheit-block{
+    padding-right: 30px; 
+    text-align: center;
+}
+.celcius-block{
+    padding-left: 30px; 
+    text-align: center;
+}
+.degree span{
+    font-size: 30px;
+}
+.temperature-description {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.credits{
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(143, 110, 204);
+    font-size: 12px;
+}
+
+@media(max-width:600px){
+    .container{
+        width: 70%;
+    }
+
+}
+@media(min-width:600px)and(max-width:1200px){
+    .container{
+        width: 50%;
+    }
+
+}
