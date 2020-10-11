@@ -43,6 +43,7 @@ window.addEventListener('load', ()=>{
         });
 } else{
     locationApi.innerText = 'Enter Location';
+    console.log('enter location');
 }
 });
 
